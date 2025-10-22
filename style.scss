@@ -19,25 +19,65 @@ main{
                         "aside1 aside2"
                         "aside1 asid2";
     nav{
-        background-color: rgb(18, 18, 18);
         grid-area: nav;
-        padding-left: 20px;
-        padding-top:20px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 600px;
+         border-bottom: 10px solid #4d4d4d;
         h1{
             color: white;
-            .navbar-divdot{
+        .navbar-divdot{
+            margin-left: 4px;
             width: 4px;
             height: 4px;
             background-color: orange;
             display: inline-block;
             
         }}
-       
-      
+        img{
+            width:50px;
+            height: 50px;
+            // border: 0.1px solid white;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid white;
+        }
+        .Contact{
+            justify-items: center;
+            align-items: center;
+            height: 35px;
+            width: 120px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            background-color:#6c6b70;
+            border: none;
+            border-radius: 5px;
+            border-left: 1px solid white;
+             border-right: 1px solid white;
+             color: white;
+             font-size: 15px;
+             padding: 10px 10px;
+        }
+          
     }
     #aside1{
-        background-color: red;
         grid-area:aside1;
+        padding: 50px;
+        h1{
+            font-size: 15px;
+            color: white;
+        }
+        .aside1-second-h1{
+            padding-top: 50px;
+            font-size: 50px;
+            color: white;
+        }
+        h3{
+            color: white;
+            font-weight: 100;
+        }
+        
     }
     #aside2{
         background-color: blue;
